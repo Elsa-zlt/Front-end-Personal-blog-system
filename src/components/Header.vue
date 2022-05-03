@@ -1,8 +1,8 @@
 <template>
   <div class="m-content">
-    <h3>欢迎来到MarkerHub的博客</h3>
+    <h3>欢迎来到Elsa-zlt的博客</h3>
     <div class="block">
-      <el-avatar :size="50" :src="user.avatar"></el-avatar>
+      <el-avatar :size="100" :src="user.avatar"></el-avatar>
       <div>{{ user.username }}</div>
     </div>
 
@@ -27,7 +27,7 @@
       return {
         user: {
           username: '请先登录',
-          avatar: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
+          avatar: 'https://github.com/Elsa-zlt/My-Study-Record/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220503111226.jpg?raw=true'
         },
         hasLogin: false
       }
@@ -49,7 +49,7 @@
     created() {
       if(this.$store.getters.getUser.username) {
         this.user.username = this.$store.getters.getUser.username
-        this.user.avatar = this.$store.getters.getUser.avatar
+        this.user.avatar = 'https://github.com/Elsa-zlt/My-Study-Record/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220503111226.jpg?raw=true'
 
         this.hasLogin = true
       }
